@@ -9,7 +9,9 @@ import { motion } from "framer-motion";
 
 function FeaturedProjects(){
     return(
-        <>
+        <div
+        className="mainBackground"
+        >
        <motion.div
         animate={{
             opacity: 1
@@ -166,7 +168,7 @@ function FeaturedProjects(){
 
         
          </motion.div>
-        </>
+        </div>
     )
 }
 

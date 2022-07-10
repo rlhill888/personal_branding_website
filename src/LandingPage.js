@@ -1,7 +1,6 @@
 import { height } from "@mui/system";
 import React, {useState, useEffect}from "react";
 import './LandingPage.css'
-import videobg from './videos_and_pictures/new_portfolio_background_AdobeExpress.mp4'
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import { useHistory } from 'react-router-dom';
@@ -40,7 +39,9 @@ function LandingPage(){
 
         }}
         >
-           <video className="videoBackground" src={videobg} autoPlay loop muted/>
+            <img 
+            className="videoBackground"
+            src='https://wallpaperaccess.com/full/85814.jpg'></img>
          
 
              <motion.div

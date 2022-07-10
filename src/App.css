@@ -7,6 +7,38 @@
   pointer-events: none;
 }
 
+.mainBackground{
+  background-image: url('https://wallpaperaccess.com/full/85814.jpg');
+  background-size: cover;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: auto;
+  min-height: 100%;
+}
+
+.mainBackground2{
+  background: rgb(94,94,94);
+  background: linear-gradient(357deg, rgba(94,94,94,1) 0%, rgba(159,159,159,1) 100%);
+  height: auto;
+  min-height: 100%;
+  background-size: cover;
+  position: absolute;
+}
+
+@keyframes brightness-animation {
+  0%{
+      filter: brightness(1); 
+  }
+  50%{
+      filter: brightness(1.2);
+  }
+  100%{
+      filter: brightness(1); 
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

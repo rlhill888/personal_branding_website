@@ -21,11 +21,13 @@ function About(){
       }
     return(
 
-        <>
+        <div
+        className="mainBackground2"
+        >
 
         <motion.div
         animate={{
-            opacity: 1
+            opacity: 1,
         }}
         initial={
             {
@@ -472,7 +474,7 @@ Flatiron School is frequently ranked as a top coding bootcamp by industry public
         </div>
         
        </motion.div>
-        </>
+        </div>
     )
 }
 

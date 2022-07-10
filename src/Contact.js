@@ -14,6 +14,8 @@ function Contact(){
 
     return(
         <motion.div
+
+        className="mainBackground2"
         animate={{
             opacity: 1
         }}
