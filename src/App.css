@@ -19,8 +19,7 @@
 }
 
 .mainBackground2{
-  background: rgb(94,94,94);
-  background: linear-gradient(357deg, rgba(94,94,94,1) 0%, rgba(159,159,159,1) 100%);
+  background: rgb(255, 255, 255);
   height: auto;
   min-height: 100%;
   background-size: cover;

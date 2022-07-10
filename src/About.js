@@ -31,7 +31,7 @@ function About(){
         }}
         initial={
             {
-                opacity: .4
+                opacity: 1
             }
         }
         transition={{

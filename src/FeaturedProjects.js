@@ -18,7 +18,7 @@ function FeaturedProjects(){
         }}
         initial={
             {
-                opacity: .4
+                opacity: 1
             }
         }
         transition={{

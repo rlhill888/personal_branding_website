@@ -21,7 +21,7 @@ function Contact(){
         }}
         initial={
             {
-                opacity: .4
+                opacity: 1
             }
         }
         transition={{
