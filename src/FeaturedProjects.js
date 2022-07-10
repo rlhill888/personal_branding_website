@@ -5,7 +5,6 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Container from '@mui/material/Container';
-import videobg from './videos_and_pictures/portfolio_background_finalized_AdobeExpress.mp4'
 import { motion } from "framer-motion";
 
 function FeaturedProjects(){
