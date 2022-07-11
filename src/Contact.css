@@ -1,6 +1,10 @@
 @media only screen and (min-width: 1280px) {
     /* For desktops: */
 
+    .linkTitlesContact{
+        margin: auto;
+      }
+
     .mainBackground{
         
         z-index: -1;
@@ -126,27 +130,141 @@
         cursor: pointer;
         
       }
-
-     
-      
-
-      
-
-
-      
-
-
-    
-   
-
-     
-
-      
-    
   }
 
  @media only screen and (max-width: 1279px) {
     /* For for laptops and tabletss: */
+
+    .linkTitlesContact{
+        margin: auto;
+      }
+
+    .mainBackground{
+        
+        z-index: -1;
+    }
+    .mainContactImg{
+        position: relative;
+        min-width: 100%;
+        max-height: 450px;
+        object-fit: cover;
+        z-index: -.5;
+    }
+    .mainContactImgDiv{
+        width: 100%;
+        height: 450px;
+        
+    }
+
+    .mainContactTitleDiv{
+        position: absolute;
+        z-index: -.6;
+        top: 20%;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 100vw;
+        animation: title-contact-box-shadow-animation 2.5s linear infinite;
+    }
+    .mainContactTitleText{
+        font-size: 70px;
+        color: white;
+    }
+
+    .mainContactConentContiner{
+        margin-top: 3%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 55vh;
+        width: 70vw;
+        left: 0;
+        right: 0;
+        margin-left: auto; 
+        margin-right: auto; 
+        background: rgb(4,4,4);
+        background: linear-gradient(9deg, rgba(4,4,4,1) 0%, rgba(59,59,59,1) 100%);
+        backdrop-filter: saturate(180%) blur(10px);
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px black;
+        margin-bottom: 3%;
+
+    }
+    .mainContactContentDivContainer{
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        width: 40%;
+        height: 80%;
+        border-radius: 10px;
+        background-color: white;
+        backdrop-filter: saturate(180%) blur(10px);
+        animation: contact-box-shadow-animation 2.5s linear infinite;
+    }
+
+    .mainContactContentDivContainerlinks{
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 40%;
+        height: 80%;
+        border-radius: 10px;
+        background-color: white;
+        backdrop-filter: saturate(180%) blur(10px);
+        animation: contact-box-shadow-animation 2.5s linear infinite;
+        
+    }
+
+    .mainContactDivHeaders{
+        text-align: left;
+        font-size: x-large;
+    }
+
+    @keyframes title-contact-box-shadow-animation {
+        0%{
+            filter: drop-shadow(2px 1px .2em rgb(86,198,254)); 
+        }
+        50%{
+            filter: drop-shadow(2px 1px .5em rgb(86,198,254)); 
+        }
+        100%{
+            filter: drop-shadow(2px 1px .2em rgb(86,198,254)); 
+        }
+      }
+
+      @keyframes contact-box-shadow-animation {
+        0%{
+            box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+        }
+        50%{
+            box-shadow: 0 0 3rem 0 rgba(86,198,254,1); 
+        }
+        100%{
+            box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+        }
+      }
+      .link-content-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3%;
+        height: 7%;
+        width: 50%;
+        -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
+        backdrop-filter: blur(8px); /* Chrome and Opera */
+        box-shadow: 0px 10px 15px 7px rgb(0 0 0 / 15%);
+        background-color: rgb(228 228 228 / 15%);
+        border-radius: 10px;
+        cursor: pointer;
+        
+      }
 
    
     
@@ -155,6 +273,137 @@
   
   @media only screen and (max-width: 769px) {
     /* Forbigger mobile phones and small tablets: */
+
+    .mainBackground{
+        
+        z-index: -1;
+    }
+    .mainContactImg{
+        position: relative;
+        min-width: 100%;
+        max-height: 450px;
+        object-fit: cover;
+        z-index: -.5;
+    }
+    .mainContactImgDiv{
+        width: 100%;
+        height: 450px;
+        
+    }
+
+    .mainContactTitleDiv{
+        position: absolute;
+        z-index: -.6;
+        top: 20%;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 100vw;
+        animation: title-contact-box-shadow-animation 2.5s linear infinite;
+    }
+    .mainContactTitleText{
+        font-size: 70px;
+        color: white;
+    }
+
+    .mainContactConentContiner{
+        margin-top: 3%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 55vh;
+        width: 70vw;
+        left: 0;
+        right: 0;
+        margin-left: auto; 
+        margin-right: auto; 
+        background: rgb(4,4,4);
+        background: linear-gradient(9deg, rgba(4,4,4,1) 0%, rgba(59,59,59,1) 100%);
+        backdrop-filter: saturate(180%) blur(10px);
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px black;
+        margin-bottom: 3%;
+
+    }
+    .mainContactContentDivContainer{
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        width: 40%;
+        height: 80%;
+        border-radius: 10px;
+        background-color: white;
+        backdrop-filter: saturate(180%) blur(10px);
+        animation: contact-box-shadow-animation 2.5s linear infinite;
+    }
+
+    .mainContactContentDivContainerlinks{
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 40%;
+        height: 80%;
+        border-radius: 10px;
+        background-color: white;
+        backdrop-filter: saturate(180%) blur(10px);
+        animation: contact-box-shadow-animation 2.5s linear infinite;
+        
+    }
+
+    .mainContactDivHeaders{
+        text-align: left;
+        font-size: large;
+    }
+
+    @keyframes title-contact-box-shadow-animation {
+        0%{
+            filter: drop-shadow(2px 1px .2em rgb(86,198,254)); 
+        }
+        50%{
+            filter: drop-shadow(2px 1px .5em rgb(86,198,254)); 
+        }
+        100%{
+            filter: drop-shadow(2px 1px .2em rgb(86,198,254)); 
+        }
+      }
+
+      @keyframes contact-box-shadow-animation {
+        0%{
+            box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+        }
+        50%{
+            box-shadow: 0 0 3rem 0 rgba(86,198,254,1); 
+        }
+        100%{
+            box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+        }
+      }
+      .link-content-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3%;
+        height: 7%;
+        width: 50%;
+        -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
+        backdrop-filter: blur(8px); /* Chrome and Opera */
+        box-shadow: 0px 10px 15px 7px rgb(0 0 0 / 15%);
+        background-color: rgb(228 228 228 / 15%);
+        border-radius: 10px;
+        cursor: pointer;
+        
+      }
+
+      .linkTitlesContact{
+        margin: auto;
+      }
     
     
     
@@ -163,7 +412,276 @@
   @media only screen and (max-width: 480px) {
     /* For mobile phones: */
 
+    .linkTitlesContact{
+        margin: auto;
+      }
+
+    .mainBackground{
+        
+        z-index: -1;
+    }
+    .mainContactImg{
+        position: relative;
+        min-width: 100%;
+        max-height: 450px;
+        object-fit: cover;
+        z-index: -.5;
+    }
+    .mainContactImgDiv{
+        width: 100%;
+        height: 450px;
+        
+    }
+
+    .mainContactTitleDiv{
+        position: absolute;
+        z-index: -.6;
+        top: 20%;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 100vw;
+        animation: title-contact-box-shadow-animation 2.5s linear infinite;
+    }
+    .mainContactTitleText{
+        font-size: 70px;
+        color: white;
+    }
+
+    .mainContactConentContiner{
+        margin-top: 3%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 55vh;
+        width: 70vw;
+        left: 0;
+        right: 0;
+        margin-left: auto; 
+        margin-right: auto; 
+        background: rgb(4,4,4);
+        background: linear-gradient(9deg, rgba(4,4,4,1) 0%, rgba(59,59,59,1) 100%);
+        backdrop-filter: saturate(180%) blur(10px);
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px black;
+        margin-bottom: 3%;
+
+    }
+    .mainContactContentDivContainer{
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        width: 40%;
+        height: 80%;
+        border-radius: 10px;
+        background-color: white;
+        backdrop-filter: saturate(180%) blur(10px);
+        animation: contact-box-shadow-animation 2.5s linear infinite;
+    }
+
+    .mainContactContentDivContainerlinks{
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 40%;
+        height: 80%;
+        border-radius: 10px;
+        background-color: white;
+        backdrop-filter: saturate(180%) blur(10px);
+        animation: contact-box-shadow-animation 2.5s linear infinite;
+        
+    }
+
+    .mainContactDivHeaders{
+        text-align: left;
+        font-size: x-large;
+    }
+
+    @keyframes title-contact-box-shadow-animation {
+        0%{
+            filter: drop-shadow(2px 1px .2em rgb(86,198,254)); 
+        }
+        50%{
+            filter: drop-shadow(2px 1px .5em rgb(86,198,254)); 
+        }
+        100%{
+            filter: drop-shadow(2px 1px .2em rgb(86,198,254)); 
+        }
+      }
+
+      @keyframes contact-box-shadow-animation {
+        0%{
+            box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+        }
+        50%{
+            box-shadow: 0 0 3rem 0 rgba(86,198,254,1); 
+        }
+        100%{
+            box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+        }
+      }
+      .link-content-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3%;
+        height: 7%;
+        width: 50%;
+        -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
+        backdrop-filter: blur(8px); /* Chrome and Opera */
+        box-shadow: 0px 10px 15px 7px rgb(0 0 0 / 15%);
+        background-color: rgb(228 228 228 / 15%);
+        border-radius: 10px;
+        cursor: pointer;
+        
+      }
+
+   
+    
+  }
+
   
+  @media only screen and (max-width: 769px) {
+    /* Forbigger mobile phones and small tablets: */
+
+    .mainBackground{
+        
+        z-index: -1;
+    }
+    .mainContactImg{
+        position: relative;
+        max-width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+        z-index: -.5;
+    }
+    .mainContactImgDiv{
+        width: 100%;
+        height: 200px;
+        
+    }
+
+    .mainContactTitleDiv{
+        position: absolute;
+        z-index: -.6;
+        top: 10%;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 100vw;
+        animation: title-contact-box-shadow-animation 2.5s linear infinite;
+    }
+    .mainContactTitleText{
+        font-size: 70px;
+        color: white;
+    }
+
+    .mainContactConentContiner{
+        margin-top: 3%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 55vh;
+        width: 90vw;
+        left: 0;
+        right: 0;
+        margin-left: auto; 
+        margin-right: auto; 
+        background: rgb(4,4,4);
+        background: linear-gradient(9deg, rgba(4,4,4,1) 0%, rgba(59,59,59,1) 100%);
+        backdrop-filter: saturate(180%) blur(10px);
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px black;
+        margin-bottom: 3%;
+
+    }
+    .mainContactContentDivContainer{
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        width: 40%;
+        height: 80%;
+        border-radius: 10px;
+        background-color: white;
+        backdrop-filter: saturate(180%) blur(10px);
+        animation: contact-box-shadow-animation 2.5s linear infinite;
+    }
+
+    .mainContactContentDivContainerlinks{
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 40%;
+        height: 80%;
+        border-radius: 10px;
+        background-color: white;
+        backdrop-filter: saturate(180%) blur(10px);
+        animation: contact-box-shadow-animation 2.5s linear infinite;
+        
+    }
+
+    .mainContactDivHeaders{
+        text-align: left;
+        font-size: 11px;
+    }
+
+    @keyframes title-contact-box-shadow-animation {
+        0%{
+            filter: drop-shadow(2px 1px .2em rgb(86,198,254)); 
+        }
+        50%{
+            filter: drop-shadow(2px 1px .5em rgb(86,198,254)); 
+        }
+        100%{
+            filter: drop-shadow(2px 1px .2em rgb(86,198,254)); 
+        }
+      }
+
+      @keyframes contact-box-shadow-animation {
+        0%{
+            box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+        }
+        50%{
+            box-shadow: 0 0 3rem 0 rgba(86,198,254,1); 
+        }
+        100%{
+            box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+        }
+      }
+      .link-content-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3%;
+        height: 7%;
+        width: 70%;
+        -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
+        backdrop-filter: blur(8px); /* Chrome and Opera */
+        box-shadow: 0px 10px 15px 7px rgb(0 0 0 / 15%);
+        background-color: rgb(228 228 228 / 15%);
+        border-radius: 10px;
+        cursor: pointer;
+        
+      }
+
+      .linkTitlesContact{
+        margin: auto;
+        font-size: medium;
+      }
    
     
   }

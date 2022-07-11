@@ -90,7 +90,9 @@ function Contact(){
                     src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
                     >
                     </img>
-                    <h3> Github</h3>
+                    <h3
+                    className="linkTitlesContact"
+                    > Github</h3>
                     
                 </div>
                 <br />
@@ -101,7 +103,9 @@ function Contact(){
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png"
                     >
                     </img>
-                    <h3> Linkden</h3>
+                    <h3
+                    className="linkTitlesContact"
+                    > Linkden</h3>
                     
                 </div>
                 <br />
@@ -112,7 +116,9 @@ function Contact(){
                     src="https://cdn.worldvectorlogo.com/logos/devto.svg"
                     >
                     </img>
-                    <h3> Blog</h3>
+                    <h3
+                    className="linkTitlesContact"
+                    > Blog</h3>
                     
                 </div>
                 <br />
@@ -123,7 +129,9 @@ function Contact(){
                     src="https://1000logos.net/wp-content/uploads/2020/05/Google-Docs-logo-400x400.png"
                     >
                     </img>
-                    <h3> Resume</h3>
+                    <h3
+                    className="linkTitlesContact"
+                    > Resume</h3>
                     
                 </div>
 

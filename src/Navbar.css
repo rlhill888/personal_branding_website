@@ -112,7 +112,109 @@
 
  @media only screen and (max-width: 1279px) {
     /* For for laptops and tabletss: */
+    .navBar{
+        position: sticky;
+        display: flex;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: space-around;
+        top: 0px;
+        height: 75px;
+        z-index: +1;
 
+    }
+    .navbarButton{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 0%;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        
+       
+        
+
+    }
+    .navbarButtonActive{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 0%;
+        color:rgba(86,198,254,1);
+        background-color: rgb(255, 255, 255);
+        border: rgba(86,198,254,1);
+        outline: none;
+        animation: box-shadow-animation 2.5s linear infinite;
+       
+        
+
+    }
+
+    .navbarButton:hover{
+        animation: box-shadow-animation 2.5s linear infinite;
+        position: relative;
+        z-index: 1;
+        /* content: '';
+        position :absolute;
+        bottom: -15%;
+        left: 5%;
+        width: 90%;
+        z-index: -1; */
+
+
+        
+
+    }
+    .navbarButton:focus{
+        animation: white-box-shadow-animation 2.5s linear infinite;
+        color: rgba(86,198,254,1);
+        z-index: 1;
+        /* content: '';
+        position :absolute;
+        bottom: -15%;
+        left: 5%;
+        width: 90%;
+        z-index: -1; */
+
+
+        
+
+    }
+
+    @keyframes box-shadow-animation {
+        0%{
+            box-shadow: 0 0 1rem 0 rgba(86,198,254,1) ; 
+           
+        }
+        50%{
+            box-shadow: 0 0 5rem 0 rgba(86,198,254,1); 
+           
+        }
+        100%{
+            box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+           
+        }
+      }
+
+      @keyframes white-box-shadow-animation {
+        0%{
+            box-shadow: 0 0 3rem 0 rgba(86,198,254,1) ; 
+            background-color: black;
+           
+        }
+        50%{
+            box-shadow: 0 0 5rem 0 rgba(86,198,254,1);
+           
+        }
+        100%{
+            box-shadow: 0 0 3rem 0 rgba(86,198,254,1); 
+            background-color: black;
+           
+        }
+      }
    
     
   }
@@ -121,14 +223,220 @@
   @media only screen and (max-width: 769px) {
     /* Forbigger mobile phones and small tablets: */
     
-    
-    
+    .navBar{
+        position: sticky;
+        display: flex;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: space-around;
+        top: 0px;
+        height: 75px;
+        z-index: +1;
+
+    }
+    .navbarButton{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 0%;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        
+       
+        
+
+    }
+    .navbarButtonActive{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 0%;
+        color:rgba(86,198,254,1);
+        background-color: rgb(255, 255, 255);
+        border: rgba(86,198,254,1);
+        outline: none;
+        animation: box-shadow-animation 2.5s linear infinite;
+       
+        
+
+    }
+
+    .navbarButton:hover{
+        animation: box-shadow-animation 2.5s linear infinite;
+        position: relative;
+        z-index: 1;
+        /* content: '';
+        position :absolute;
+        bottom: -15%;
+        left: 5%;
+        width: 90%;
+        z-index: -1; */
+
+
+        
+
+    }
+    .navbarButton:focus{
+        animation: white-box-shadow-animation 2.5s linear infinite;
+        color: rgba(86,198,254,1);
+        z-index: 1;
+        /* content: '';
+        position :absolute;
+        bottom: -15%;
+        left: 5%;
+        width: 90%;
+        z-index: -1; */
+
+
+        
+
+    }
+
+    @keyframes box-shadow-animation {
+        0%{
+            box-shadow: 0 0 1rem 0 rgba(86,198,254,1) ; 
+           
+        }
+        50%{
+            box-shadow: 0 0 5rem 0 rgba(86,198,254,1); 
+           
+        }
+        100%{
+            box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+           
+        }
+      }
+
+      @keyframes white-box-shadow-animation {
+        0%{
+            box-shadow: 0 0 3rem 0 rgba(86,198,254,1) ; 
+            background-color: black;
+           
+        }
+        50%{
+            box-shadow: 0 0 5rem 0 rgba(86,198,254,1);
+           
+        }
+        100%{
+            box-shadow: 0 0 3rem 0 rgba(86,198,254,1); 
+            background-color: black;
+           
+        }
+      }
   }
   
   @media only screen and (max-width: 480px) {
     /* For mobile phones: */
 
   
-   
+    .navBar{
+        position: sticky;
+        display: flex;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: space-around;
+        top: 0px;
+        height: 75px;
+        z-index: +1;
+
+    }
+    .navbarButton{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 0%;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        
+       
+        
+
+    }
+    .navbarButtonActive{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 0%;
+        color:rgba(86,198,254,1);
+        background-color: rgb(255, 255, 255);
+        border: rgba(86,198,254,1);
+        outline: none;
+        animation: box-shadow-animation 2.5s linear infinite;
+       
+        
+
+    }
+
+    .navbarButton:hover{
+        animation: box-shadow-animation 2.5s linear infinite;
+        position: relative;
+        z-index: 1;
+        /* content: '';
+        position :absolute;
+        bottom: -15%;
+        left: 5%;
+        width: 90%;
+        z-index: -1; */
+
+
+        
+
+    }
+    .navbarButton:focus{
+        animation: white-box-shadow-animation 2.5s linear infinite;
+        color: rgba(86,198,254,1);
+        z-index: 1;
+        /* content: '';
+        position :absolute;
+        bottom: -15%;
+        left: 5%;
+        width: 90%;
+        z-index: -1; */
+
+
+        
+
+    }
+    .navbarHeader{
+        font-size: 20px;
+    }
+
+    @keyframes box-shadow-animation {
+        0%{
+            box-shadow: 0 0 1rem 0 rgba(86,198,254,1) ; 
+           
+        }
+        50%{
+            box-shadow: 0 0 5rem 0 rgba(86,198,254,1); 
+           
+        }
+        100%{
+            box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+           
+        }
+      }
+
+      @keyframes white-box-shadow-animation {
+        0%{
+            box-shadow: 0 0 3rem 0 rgba(86,198,254,1) ; 
+            background-color: black;
+           
+        }
+        50%{
+            box-shadow: 0 0 5rem 0 rgba(86,198,254,1);
+           
+        }
+        100%{
+            box-shadow: 0 0 3rem 0 rgba(86,198,254,1); 
+            background-color: black;
+           
+        }
+      }
     
   }

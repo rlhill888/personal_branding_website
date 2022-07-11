@@ -58,7 +58,7 @@ function About(){
             <h1
             className="aboutTitle"
             >
-                A Little Bit About Me
+                A Littlebit About Me
             </h1>
         </div>
 
@@ -364,7 +364,7 @@ Flatiron School is frequently ranked as a top coding bootcamp by industry public
             className="aboutcodingKnowledgeDiv"
             >
                 <h2
-                
+                className="codingKnowledgeHeader"
                 >Coding Knowledge</h2>
                 <div
                 className="aboutCodingKnowledgeFlexDiv"

@@ -29,7 +29,9 @@ function NavBar(){
         className={setActiveClass('/about')}
         onClick={()=> history.push('/about')}
         >
-            <h1>
+            <h1
+            className="navbarHeader"
+            >
                 About
             </h1>
             
@@ -39,7 +41,9 @@ function NavBar(){
        className={setActiveClass('/contact')}
        onClick={()=> history.push('/contact')}
         >
-            <h1>
+            <h1
+             className="navbarHeader"
+            >
                  Contact
             </h1>
            
@@ -49,7 +53,9 @@ function NavBar(){
          className={setActiveClass('/featured_projects')}
          onClick={()=> history.push('/featured_projects')}
          >
-            <h1>
+            <h1
+             className="navbarHeader"
+            >
                 Featured Projects
             </h1>
             

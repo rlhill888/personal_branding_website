@@ -72,8 +72,12 @@ function FeaturedProjects(){
                                  allowFullScreen
                                  
                                  ></iframe>
-                                 <h1>Work Out For Me</h1>
-                                 <h2>App for users to have a custom workout/meal plans created for them based on their personal goals, weight, age and height</h2>
+                                 <h1
+                                 className="titleAndDescription"
+                                 >Work Out For Me</h1>
+                                 <h2
+                                 className="titleAndDescription"
+                                 >App for users to have a custom workout/meal plans created for them based on their personal goals, weight, age and height</h2>
                             </div>
 
                        
@@ -93,7 +97,7 @@ function FeaturedProjects(){
                             >
                                  <h2
                             className="AccordianProjectHeader"
-                            >TKRL Beat/Instrumental Website</h2>
+                            >TKRL Beat Website</h2>
                             <img
                             src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_626660256_2000108620009280158_388846.jpg"
                             className="AccordianSummaryImg"
@@ -112,8 +116,12 @@ function FeaturedProjects(){
                                  allowFullScreen
                                  
                                  ></iframe>
-                                 <h1>TKRL Beat Website</h1>
-                                 <h2>App that allows users to sort through, listen to, and purchase instrumentals that I created along with their licensing rights</h2>
+                                 <h1
+                                 className="titleAndDescription"
+                                 >TKRL Beat Website</h1>
+                                 <h2
+                                 className="titleAndDescription"
+                                 >App that allows users to sort through, listen to, and purchase instrumentals that I created along with their licensing rights</h2>
                             </div>
 
                         </AccordionDetails>
@@ -148,8 +156,12 @@ function FeaturedProjects(){
                                  allowFullScreen
                                  
                                  ></iframe>
-                                 <h1>Habitual</h1>
-                                 <h2>Simple App where users can make habits and track their daily habit goals</h2>
+                                 <h1
+                                 className="titleAndDescription"
+                                 >Habitual</h1>
+                                 <h2
+                                 className="titleAndDescription"
+                                 >Simple App where users can make habits and track their daily habit goals</h2>
                             </div>
 
                         </AccordionDetails>
