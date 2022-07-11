@@ -822,8 +822,7 @@
         background: rgb(255,255,255);
         background: linear-gradient(169deg, rgba(255,255,255,1) 0%, rgba(86,198,254,1) 100%);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        position: relative;
+        -webkit-text-fill-color: #c2c2c2;
         text-align: center;
         justify-content: center;
         display: flex;

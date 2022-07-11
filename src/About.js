@@ -80,6 +80,14 @@ function About(){
                 <h1
                 className="aboutTitle2"
                 >My Personal Bio and Backstory into Coding </h1>
+                <img
+                style={{
+                    margin: 'auto'
+                }}
+                width={'30px'}
+                height='30px'
+                src="https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png"
+                ></img>
             </AccordionSummary>
             <AccordionDetails>
                 <div
