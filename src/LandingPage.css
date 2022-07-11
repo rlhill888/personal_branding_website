@@ -18,7 +18,7 @@
             filter: brightness(1); 
         }
       }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1441px) {
     /* For desktops: */
 
     
@@ -41,7 +41,7 @@
         z-index: 1;
         overflow: hidden;
         width: 80vw;
-        height: 55vh;
+        height: 500px;
         top: 8%;
         display: flex;
         flex-direction: row;
@@ -215,8 +215,392 @@
     
   }
 
+  @media only screen and (max-width: 1440px) {
+    /* For for large laptops and tabletss: */
+
+    .glassCard{
+      background-color: rgb(255, 255, 255);
+      clip-path: circle();
+      padding: 3%;
+
+
+  }
+
+  .glasscontainer {
+      /* box-shadow: 0 0 2rem 0 rgba(86,198,254,1);  */
+      background: rgb(64, 64, 64);
+      background: linear-gradient(318deg, rgb(70, 70, 70) 0%, rgb(72, 72, 72) 51%);
+      border-radius: 50px;
+      position: absolute;
+      z-index: 1;
+      overflow: hidden;
+      width: 80vw;
+      height: 450px;
+      top: 8%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items:center;
+      animation: box-shadow-animation 2.5s linear infinite;
+    }
+
+    @keyframes box-shadow-animation {
+      0%{
+          box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+      }
+      50%{
+          box-shadow: 0 0 7rem 0 rgba(86,198,254,1); 
+      }
+      100%{
+          box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+      }
+    }
+
+    
+    
+    .glasscontainer:before {
+      /* background-color: white; */
+      content: "";
+      position: absolute;
+      background: inherit;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      box-shadow: inset 0 0 2000px rgb(0, 0, 0);
+      filter: blur(1px);
+      margin: -20px;
+    }
+    .mainPictureImage{
+      position: relative;
+      clip-path: circle();
+      max-width: 300px;
+      max-height: 300px;
+      margin-right: 2%;
+      object-fit: cover;
+      
+      /* left: 5vw; */
+    }
+
+
+    .welcomeFlexContainer{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+        /* width: 90vw;
+      height: 65vh;
+      top: 8%;
+      left: 5%; */
+
+    }
+
+    .welcomeImgDiv{
+      box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+      border-radius: 100%;
+    }
+
+    .welcomeHeaderDiv{
+      position: relative;
+      width: 40vw;
+      display: flex;
+      /* justify-content: center; */
+      flex-direction: column;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(43deg, rgba(0,0,0,1) 0%, rgba(41,41,41,1) 100%);
+      border-radius: 50px;
+      margin-bottom: 40%;
+      margin-top: 40%; 
+      opacity: .9;
+      box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+    }
+    .rodneyHillTitle{
+      font-size: 4vw;
+      background: rgb(255,255,255);
+      background: linear-gradient(169deg, rgba(255,255,255,1) 0%, rgba(86,198,254,1) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+      /* text-shadow: rgba(86,198,254,1) 1px 0 3px; */
+      
+
+    }
+
+    @keyframes title-contact-box-shadow-animation {
+      0%{
+          filter: drop-shadow(2px 1px .2em rgb(86,198,254)); 
+      }
+      50%{
+          filter: drop-shadow(2px 1px .5em rgb(86,198,254)); 
+      }
+      100%{
+          filter: drop-shadow(2px 1px .2em rgb(86,198,254)); 
+      }
+    }
+
+    .rodneyHillTitle2{
+      font-size: 2vw;
+      background: rgb(255,255,255);
+      background: linear-gradient(169deg, rgba(255,255,255,1) 0%, rgba(86,198,254,1) 100%);
+      /* text-shadow: rgba(86,198,254,1) 1px 0 8px; */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+    }
+
+    .mainWelcomePageFlexBox{
+      display: flex;
+      flex-direction: column;
+    }
+
+    
+
+    .rodneyHillTitleDiv{
+      position: relative;
+      
+  }
+
+  .buttonGroupDiv{
+      background: rgb(0, 0, 0);
+      background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+
+      box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+      border-radius: 50px;
+      position: absolute;
+      z-index: 1;
+      overflow: hidden;
+       /* width: 70vw; */
+      /* height: 55vh;  */
+      top: 70%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items:center;
+      transition: all 2s
+
+  }
+
+  /* .buttonGroupDiv:before {
+      
+      content: "";
+      position: absolute;
+      background: inherit;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      box-shadow: inset 0 0 2000px rgb(239, 239, 239);
+      filter: blur(1px);
+      margin: -20px;
+    } */
+  .landingPageButtonGroup{
+      height: 75px;
+      width: 15vw;
+      font-size: large;
+      font-weight: 500;
+  }
+
+  .buttonGroupDiv :hover{
+      animation: box-shadow-animation 2.5s linear infinite;
+
+  }
+
+   
+    
+  }
+
  @media only screen and (max-width: 1279px) {
-    /* For for laptops and tabletss: */
+  .glassCard{
+    background-color: rgb(255, 255, 255);
+    clip-path: circle();
+    padding: 3%;
+
+
+}
+
+.glasscontainer {
+    /* box-shadow: 0 0 2rem 0 rgba(86,198,254,1);  */
+    background: rgb(64, 64, 64);
+    background: linear-gradient(318deg, rgb(70, 70, 70) 0%, rgb(72, 72, 72) 51%);
+    border-radius: 50px;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    width: 80vw;
+    height: 300px;
+    top: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    animation: box-shadow-animation 2.5s linear infinite;
+  }
+
+  @keyframes box-shadow-animation {
+    0%{
+        box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+    }
+    50%{
+        box-shadow: 0 0 7rem 0 rgba(86,198,254,1); 
+    }
+    100%{
+        box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+    }
+  }
+
+  
+  
+  .glasscontainer:before {
+    /* background-color: white; */
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgb(0, 0, 0);
+    filter: blur(1px);
+    margin: -20px;
+  }
+  .mainPictureImage{
+    position: relative;
+    clip-path: circle();
+    max-width: 250px;
+    max-height: 250px;
+    margin-right: 2%;
+    object-fit: cover;
+    
+    /* left: 5vw; */
+  }
+
+
+  .welcomeFlexContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+      /* width: 90vw;
+    height: 65vh;
+    top: 8%;
+    left: 5%; */
+
+  }
+
+  .welcomeImgDiv{
+    box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+    border-radius: 100%;
+  }
+
+  .welcomeHeaderDiv{
+    position: relative;
+    width: 40vw;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(43deg, rgba(0,0,0,1) 0%, rgba(41,41,41,1) 100%);
+    border-radius: 50px;
+    margin-bottom: 40%;
+    margin-top: 40%; 
+    opacity: .9;
+    box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+  }
+  .rodneyHillTitle{
+    font-size: 4vw;
+    background: rgb(255,255,255);
+    background: linear-gradient(169deg, rgba(255,255,255,1) 0%, rgba(86,198,254,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* text-shadow: rgba(86,198,254,1) 1px 0 3px; */
+    
+
+  }
+
+  @keyframes title-contact-box-shadow-animation {
+    0%{
+        filter: drop-shadow(2px 1px .2em rgb(86,198,254)); 
+    }
+    50%{
+        filter: drop-shadow(2px 1px .5em rgb(86,198,254)); 
+    }
+    100%{
+        filter: drop-shadow(2px 1px .2em rgb(86,198,254)); 
+    }
+  }
+
+  .rodneyHillTitle2{
+    font-size: 2vw;
+    background: rgb(255,255,255);
+    background: linear-gradient(169deg, rgba(255,255,255,1) 0%, rgba(86,198,254,1) 100%);
+    /* text-shadow: rgba(86,198,254,1) 1px 0 8px; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+
+  .mainWelcomePageFlexBox{
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+
+  .rodneyHillTitleDiv{
+    position: relative;
+    
+}
+
+.buttonGroupDiv{
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+
+    box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+    border-radius: 50px;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+     /* width: 70vw; */
+    /* height: 55vh;  */
+    top: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    transition: all 2s
+
+}
+
+/* .buttonGroupDiv:before {
+    
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgb(239, 239, 239);
+    filter: blur(1px);
+    margin: -20px;
+  } */
+.landingPageButtonGroup{
+    height: 75px;
+    width: 15vw;
+    font-size: large;
+    font-weight: 500;
+}
+
+.buttonGroupDiv :hover{
+    animation: box-shadow-animation 2.5s linear infinite;
+
+}
+  
 
    
     
@@ -225,6 +609,194 @@
   
   @media only screen and (max-width: 769px) {
     /* Forbigger mobile phones and small tablets: */
+    .glassCard{
+      background-color: rgb(255, 255, 255);
+      clip-path: circle();
+      padding: 3%;
+
+
+  }
+
+  .glasscontainer {
+      /* box-shadow: 0 0 2rem 0 rgba(86,198,254,1);  */
+      background: rgb(64, 64, 64);
+      background: linear-gradient(318deg, rgb(70, 70, 70) 0%, rgb(72, 72, 72) 51%);
+      border-radius: 50px;
+      position: absolute;
+      z-index: 1;
+      overflow: hidden;
+      width: 80vw;
+      height: 300px;
+      top: 8%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items:center;
+      animation: box-shadow-animation 2.5s linear infinite;
+    }
+
+    @keyframes box-shadow-animation {
+      0%{
+          box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+      }
+      50%{
+          box-shadow: 0 0 7rem 0 rgba(86,198,254,1); 
+      }
+      100%{
+          box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+      }
+    }
+
+    
+    
+    .glasscontainer:before {
+      /* background-color: white; */
+      content: "";
+      position: absolute;
+      background: inherit;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      box-shadow: inset 0 0 2000px rgb(0, 0, 0);
+      filter: blur(1px);
+      margin: -20px;
+    }
+    .mainPictureImage{
+      position: relative;
+      clip-path: circle();
+      max-width: 200px;
+      max-height: 200px;
+      margin-right: 2%;
+      object-fit: cover;
+      
+      /* left: 5vw; */
+    }
+
+
+    .welcomeFlexContainer{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+        /* width: 90vw;
+      height: 65vh;
+      top: 8%;
+      left: 5%; */
+
+    }
+
+    .welcomeImgDiv{
+      box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+      border-radius: 100%;
+    }
+
+    .welcomeHeaderDiv{
+      position: relative;
+      width: 40vw;
+      display: flex;
+      /* justify-content: center; */
+      flex-direction: column;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(43deg, rgba(0,0,0,1) 0%, rgba(41,41,41,1) 100%);
+      border-radius: 50px;
+      margin-bottom: 40%;
+      margin-top: 40%; 
+      opacity: .9;
+      box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+    }
+    .rodneyHillTitle{
+      font-size: 4vw;
+      background: rgb(255,255,255);
+      background: linear-gradient(169deg, rgba(255,255,255,1) 0%, rgba(86,198,254,1) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+      /* text-shadow: rgba(86,198,254,1) 1px 0 3px; */
+      
+
+    }
+
+    @keyframes title-contact-box-shadow-animation {
+      0%{
+          filter: drop-shadow(2px 1px .2em rgb(86,198,254)); 
+      }
+      50%{
+          filter: drop-shadow(2px 1px .5em rgb(86,198,254)); 
+      }
+      100%{
+          filter: drop-shadow(2px 1px .2em rgb(86,198,254)); 
+      }
+    }
+
+    .rodneyHillTitle2{
+      font-size: 2vw;
+      background: rgb(255,255,255);
+      background: linear-gradient(169deg, rgba(255,255,255,1) 0%, rgba(86,198,254,1) 100%);
+      /* text-shadow: rgba(86,198,254,1) 1px 0 8px; */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+    }
+
+    .mainWelcomePageFlexBox{
+      display: flex;
+      flex-direction: column;
+    }
+
+    
+
+    .rodneyHillTitleDiv{
+      position: relative;
+      
+  }
+
+  .buttonGroupDiv{
+      background: rgb(0, 0, 0);
+      background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+
+      box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+      border-radius: 50px;
+      position: absolute;
+      z-index: 1;
+      overflow: hidden;
+       /* width: 70vw; */
+      /* height: 55vh;  */
+      top: 70%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items:center;
+      transition: all 2s
+
+  }
+
+  /* .buttonGroupDiv:before {
+      
+      content: "";
+      position: absolute;
+      background: inherit;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      box-shadow: inset 0 0 2000px rgb(239, 239, 239);
+      filter: blur(1px);
+      margin: -20px;
+    } */
+  .landingPageButtonGroup{
+      height: 75px;
+      width: 15vw;
+      font-size: large;
+      font-weight: 500;
+  }
+
+  .buttonGroupDiv :hover{
+      animation: box-shadow-animation 2.5s linear infinite;
+
+  }
     
     
     
@@ -234,6 +806,192 @@
     /* For mobile phones: */
 
   
-   
+    .glassCard{
+      background-color: rgb(255, 255, 255);
+      clip-path: circle();
+      padding: 3%;
+
+
+  }
+
+  .glasscontainer {
+      /* box-shadow: 0 0 2rem 0 rgba(86,198,254,1);  */
+      background: rgb(64, 64, 64);
+      background: linear-gradient(318deg, rgb(70, 70, 70) 0%, rgb(72, 72, 72) 51%);
+      border-radius: 50px;
+      position: absolute;
+      
+      overflow: hidden;
+      width: 80vw;
+      height: 400px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      animation: box-shadow-animation 2.5s linear infinite;
+      
+    }
+
+    @keyframes box-shadow-animation {
+      0%{
+          box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+      }
+      50%{
+          box-shadow: 0 0 7rem 0 rgba(86,198,254,1); 
+      }
+      100%{
+          box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+      }
+    }
+
+    
+    
+    .glasscontainer:before {
+      /* background-color: white; */
+      content: "";
+      position: absolute;
+      background: inherit;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      box-shadow: inset 0 0 2000px rgb(0, 0, 0);
+      filter: blur(1px);
+      margin: -20px;
+    }
+    .mainPictureImage{
+      position: relative;
+      clip-path: circle();
+      max-width: 200px;
+      max-height: 200px;
+      
+      object-fit: cover;
+      
+      /* left: 5vw; */
+    }
+
+
+    .welcomeFlexContainer{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+        /* width: 90vw;
+      height: 65vh;
+      top: 8%;
+      left: 5%; */
+
+    }
+
+    .welcomeImgDiv{
+      box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+      border-radius: 100%;
+    }
+
+    .welcomeHeaderDiv{
+      position: relative;
+      width: 70vw;
+      display: flex;
+      /* justify-content: center; */
+      flex-direction: column;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(43deg, rgba(0,0,0,1) 0%, rgba(41,41,41,1) 100%);
+      border-radius: 50px;
+      margin: 0;
+      opacity: .9;
+      box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+    }
+    .rodneyHillTitle{
+      font-size: 5vw;
+      background: rgb(255,255,255);
+      background: linear-gradient(169deg, rgba(255,255,255,1) 0%, rgba(86,198,254,1) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+      /* text-shadow: rgba(86,198,254,1) 1px 0 3px; */
+      
+
+    }
+
+    @keyframes title-contact-box-shadow-animation {
+      0%{
+          filter: drop-shadow(2px 1px .2em rgb(86,198,254)); 
+      }
+      50%{
+          filter: drop-shadow(2px 1px .5em rgb(86,198,254)); 
+      }
+      100%{
+          filter: drop-shadow(2px 1px .2em rgb(86,198,254)); 
+      }
+    }
+
+    .rodneyHillTitle2{
+      font-size: 4vw;
+      background: rgb(255,255,255);
+      background: linear-gradient(169deg, rgba(255,255,255,1) 0%, rgba(86,198,254,1) 100%);
+      /* text-shadow: rgba(86,198,254,1) 1px 0 8px; */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+    }
+
+    .mainWelcomePageFlexBox{
+      display: flex;
+      flex-direction: column;
+    }
+
+    
+
+    .rodneyHillTitleDiv{
+      position: relative;
+      
+  }
+
+  .buttonGroupDiv{
+      background: rgb(0, 0, 0);
+      background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+
+      box-shadow: 0 0 1rem 0 rgba(86,198,254,1); 
+      border-radius: 50px;
+      position: absolute;
+      z-index: 1;
+      overflow: hidden;
+       /* width: 70vw; */
+      /* height: 55vh;  */
+      top: 70%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items:center;
+      transition: all 2s;
+      width: 90vw;
+
+  }
+
+  /* .buttonGroupDiv:before {
+      
+      content: "";
+      position: absolute;
+      background: inherit;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      box-shadow: inset 0 0 2000px rgb(239, 239, 239);
+      filter: blur(1px);
+      margin: -20px;
+    } */
+  .landingPageButtonGroup{
+      height: 75px;
+      width: 15vw;
+      font-size: large;
+      font-weight: 500;
+  }
+
+  .buttonGroupDiv :hover{
+      animation: box-shadow-animation 2.5s linear infinite;
+
+  }
     
   }
