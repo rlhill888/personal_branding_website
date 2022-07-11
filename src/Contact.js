@@ -87,6 +87,7 @@ function Contact(){
                 onClick={() => openInNewTab('https://github.com/rlhill888')}
                 className="link-content-div">
                     <img
+                    className="logoImageIcon"
                     src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
                     >
                     </img>
@@ -100,6 +101,7 @@ function Contact(){
                 onClick={() => openInNewTab('https://www.linkedin.com/in/rodney-lawrence-hill/')}
                 >
                     <img
+                    className="logoImageIcon"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png"
                     >
                     </img>
@@ -113,6 +115,7 @@ function Contact(){
                  onClick={() => openInNewTab('https://dev.to/rlhill888')}
                 >
                     <img
+                    className="logoImageIcon"
                     src="https://cdn.worldvectorlogo.com/logos/devto.svg"
                     >
                     </img>
@@ -126,6 +129,7 @@ function Contact(){
                  onClick={() => openInNewTab('https://docs.google.com/document/d/1GBdzV7akD7DVgg05yL-Cp21uFhPv5sgdaCRNJu_0b_0/edit?usp=sharing')}
                 >
                     <img
+                    className="logoImageIcon"
                     src="https://1000logos.net/wp-content/uploads/2020/05/Google-Docs-logo-400x400.png"
                     >
                     </img>
