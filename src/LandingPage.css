@@ -591,7 +591,7 @@
   } */
 .landingPageButtonGroup{
     height: 75px;
-    width: 15vw;
+    width: 20vw;
     font-size: large;
     font-weight: 500;
 }
@@ -788,7 +788,7 @@
     } */
   .landingPageButtonGroup{
       height: 75px;
-      width: 15vw;
+      width: 25vw;
       font-size: large;
       font-weight: 500;
   }
@@ -958,7 +958,7 @@
       overflow: hidden;
        /* width: 70vw; */
       /* height: 55vh;  */
-      top: 70%;
+      top: 85%;
       display: flex;
       flex-direction: row;
       justify-content: space-around;

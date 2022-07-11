@@ -9,6 +9,8 @@ import mainImg from './videos_and_pictures/IMG_3752.JPG'
 
 function LandingPage(){
 
+    const width= window.innerWidth
+
     const [animationStep, setAnimationStep]= useState('')
     const [pictureRollIn, setPictureRollIn]= useState(false)
     const [mainHeaderFadeIn, setMainHeaderFadeIn]= useState(false)
@@ -25,6 +27,20 @@ function LandingPage(){
         setTimeout(()=> setShowNavBar(true), 1900)
 
     }, [])
+
+    function setShowNavBarTextSize(){
+        
+        if(width<=480){
+            return '13px'
+        }
+
+        if(width<=769){
+            return '18px'
+        }
+        else{
+            return '24px'
+        }
+    }
 
     return(
         <>
@@ -180,7 +196,7 @@ function LandingPage(){
             <Button
             className="landingPageButtonGroup"
             style={{
-                fontSize: '24px',
+                fontSize: setShowNavBarTextSize(),
                 fontWeight: '800'
             }}
             onClick={()=> history.push('/about')}
@@ -194,7 +210,7 @@ function LandingPage(){
             className="landingPageButtonGroup"
 
             style={{
-                fontSize: '24px',
+                fontSize: setShowNavBarTextSize(),
                 fontWeight: '800'
             }}
             >
@@ -205,7 +221,7 @@ function LandingPage(){
             className="landingPageButtonGroup"
 
             style={{
-                fontSize: '20px',
+                fontSize: setShowNavBarTextSize(),
                 fontWeight: '800'
             }}
             >
