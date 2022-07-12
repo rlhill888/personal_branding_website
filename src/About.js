@@ -21,12 +21,6 @@ function About(){
         if (newWindow) newWindow.opener = null
       }
 
-      function showVideo(url){
-         if(width<=480){
-            console.log('click')
-            return openInNewTab(url)
-        }
-      }
     return(
 
         <div
@@ -126,7 +120,13 @@ function About(){
                 border: 'none'
                }}
                >
-                <AccordionSummary>
+                <AccordionSummary
+                onClick={()=>{
+                    if(width <= 480 && showVideoTitle===true){
+                        openInNewTab('https://drive.google.com/file/d/1J52J5aAOP6H7oSgaJL-xsQYZkad13aEd/preview')
+                    }
+                }}
+                >
                     {showVideoTitle ? <h1
                     className="littleBigPlanetVideoTitle"
                     >
@@ -134,17 +134,18 @@ function About(){
                         </h1> : <></>}
                 </AccordionSummary>
                 <AccordionDetails>
-                    <div
-                    onClick={()=> showVideo('https://drive.google.com/file/d/1J52J5aAOP6H7oSgaJL-xsQYZkad13aEd/preview')}
-                    >
-
-                    <iframe 
+                  
+                        {
+                            width <= 480 ? <></> :
+                             <iframe 
                     
                     src="https://drive.google.com/file/d/1J52J5aAOP6H7oSgaJL-xsQYZkad13aEd/preview" 
                
                className="mainAboutVideo"
                allow="autoplay" allowFullScreen></iframe>
-                    </div>
+                        }
+                   
+                
                     
                 </AccordionDetails>
                </Accordion>

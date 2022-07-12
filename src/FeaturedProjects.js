@@ -127,7 +127,7 @@ function FeaturedProjects(){
 
                                     <div
                                       className="projectLink"
-                                      onClick={()=> openInNewTab('https://drive.google.com/file/d/1T7XLsCTSrxaGiDSARfdnTfdA4x51crm6/preview')}
+                                      onClick={()=> openInNewTab('https://github.com/rlhill888/workout-app')}
                                       >
                                         <img
                                        className="projectLinkImage"
@@ -219,7 +219,7 @@ function FeaturedProjects(){
 
                                     <div
                                       className="projectLink"
-                                      onClick={()=> openInNewTab('https://drive.google.com/file/d/1T7XLsCTSrxaGiDSARfdnTfdA4x51crm6/preview')}
+                                      onClick={()=> openInNewTab('https://github.com/rlhill888/tkrl-beat-site')}
                                       >
                                         <img
                                        className="projectLinkImage"
@@ -305,7 +305,7 @@ function FeaturedProjects(){
 
                                     <div
                                       className="projectLink"
-                                      onClick={()=> openInNewTab('https://drive.google.com/file/d/1T7XLsCTSrxaGiDSARfdnTfdA4x51crm6/preview')}
+                                      onClick={()=> openInNewTab('https://github.com/alex-andria/Habit-Tracker')}
                                       >
                                         <img
                                        className="projectLinkImage"
