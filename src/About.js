@@ -14,10 +14,18 @@ import { motion } from "framer-motion";
 function About(){
     const [shownCodingKnowledge, setShownCodingKnowledge]= useState('basic coding applications')
     const [showVideoTitle, setShowVideoTitle]= useState(true)
+    const width= window.innerWidth
 
     const openInNewTab = (url) => {
         const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
         if (newWindow) newWindow.opener = null
+      }
+
+      function showVideo(url){
+         if(width<=480){
+            console.log('click')
+            return openInNewTab(url)
+        }
       }
     return(
 
@@ -82,7 +90,8 @@ function About(){
                 >My Personal Bio and Backstory into Coding </h1>
                 <img
                 style={{
-                    margin: 'auto'
+                    margin: 'auto',
+                    marginLeft: '2%'
                 }}
                 width={'30px'}
                 height='30px'
@@ -125,10 +134,18 @@ function About(){
                         </h1> : <></>}
                 </AccordionSummary>
                 <AccordionDetails>
-                    <iframe src="https://drive.google.com/file/d/1J52J5aAOP6H7oSgaJL-xsQYZkad13aEd/preview" 
+                    <div
+                    onClick={()=> showVideo('https://drive.google.com/file/d/1J52J5aAOP6H7oSgaJL-xsQYZkad13aEd/preview')}
+                    >
+
+                    <iframe 
+                    
+                    src="https://drive.google.com/file/d/1J52J5aAOP6H7oSgaJL-xsQYZkad13aEd/preview" 
                
                className="mainAboutVideo"
                allow="autoplay" allowFullScreen></iframe>
+                    </div>
+                    
                 </AccordionDetails>
                </Accordion>
                

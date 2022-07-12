@@ -63,7 +63,7 @@ function Contact(){
             >
                 <h1
                  className="mainContactDivHeaders"
-                >Please Feel Free To Contact Me, and Check Out the Links to My Github, Linkden, Blog Posts, and Resume</h1>
+                >Please Feel Free To Contact Me, and Check Out the Links to My Github, LinkedIn, Blog Posts, and Resume</h1>
                 <br />
                 <h1
                 className="mainContactDivHeaders"
@@ -107,7 +107,7 @@ function Contact(){
                     </img>
                     <h3
                     className="linkTitlesContact"
-                    > Linkden</h3>
+                    > LinkedIn</h3>
                     
                 </div>
                 <br />

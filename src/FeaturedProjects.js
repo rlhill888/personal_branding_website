@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import NavBar from "./Navbar";
 import './FeaturedProjects.css';
 import Accordion from '@mui/material/Accordion';
@@ -8,6 +8,21 @@ import Container from '@mui/material/Container';
 import { motion } from "framer-motion";
 
 function FeaturedProjects(){
+
+    const width= window.innerWidth
+    const [deviceWidth, setDeviceWidth]=useState('')
+    const openInNewTab = (url) => {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+       
+        if (newWindow) newWindow.opener = null
+      }
+    useEffect(()=>{
+        if(width<=480){
+            setDeviceWidth('mobile')
+        }
+
+    }, [])
+    
     return(
         <div
         className="mainBackground"
@@ -66,18 +81,69 @@ function FeaturedProjects(){
                             <div
                             className="accordianDiv"
                             >
-                                 <iframe src="https://drive.google.com/file/d/1T7XLsCTSrxaGiDSARfdnTfdA4x51crm6/preview" 
+                                {
+                                    deviceWidth==='mobile' ? <></> :
+
+                                    <iframe
+                                 
+                                 src="https://drive.google.com/file/d/1T7XLsCTSrxaGiDSARfdnTfdA4x51crm6/preview" 
                                  
                                  className="videos"
                                  allowFullScreen
                                  
                                  ></iframe>
+                                }
+                                   
+                
+                                 
                                  <h1
                                  className="titleAndDescription"
                                  >Work Out For Me</h1>
                                  <h2
                                  className="titleAndDescription"
                                  >App for users to have a custom workout/meal plans created for them based on their personal goals, weight, age and height</h2>
+
+                                 {
+                                      deviceWidth==='mobile' ? 
+                                      <div
+                                      className="projectLink"
+                                      onClick={()=> openInNewTab('https://drive.google.com/file/d/1T7XLsCTSrxaGiDSARfdnTfdA4x51crm6/preview')}
+                                      >
+                                        <img
+                                       className="projectLinkImage"
+                                        src='https://cdn-icons-png.flaticon.com/512/149/149125.png'
+                                        >
+                                        </img>
+                                        <h2
+                                        className="projectLinkTitle"
+                                        >
+                                            View Demo
+                                        </h2>
+
+
+                                      </div> : <></>
+
+                                 }
+
+                                    <div
+                                      className="projectLink"
+                                      onClick={()=> openInNewTab('https://drive.google.com/file/d/1T7XLsCTSrxaGiDSARfdnTfdA4x51crm6/preview')}
+                                      >
+                                        <img
+                                       className="projectLinkImage"
+                                        src='https://cdn-icons-png.flaticon.com/512/25/25231.png'
+                                        >
+                                        </img>
+                                        <h2
+                                        className="projectLinkTitle"
+                                        >
+                                            Github Link
+                                        </h2>
+
+
+                                      </div>
+
+                                 
                             </div>
 
                        
@@ -110,18 +176,64 @@ function FeaturedProjects(){
                         <div
                             className="accordianDiv"
                             >
+
+{
+                                    deviceWidth==='mobile' ? <></> :
+
                                  <iframe src="https://drive.google.com/file/d/1IMymEGd5ZhAFOlZ_FGJD4HR-AIR3mOoc/preview" 
                                  
                                  className="videos"
                                  allowFullScreen
                                  
                                  ></iframe>
+
+}
                                  <h1
                                  className="titleAndDescription"
                                  >TKRL Beat Website</h1>
                                  <h2
                                  className="titleAndDescription"
                                  >App that allows users to sort through, listen to, and purchase instrumentals that I created along with their licensing rights</h2>
+
+                                {
+                                      deviceWidth==='mobile' ? 
+                                      <div
+                                      className="projectLink"
+                                      onClick={()=> openInNewTab("https://drive.google.com/file/d/1IMymEGd5ZhAFOlZ_FGJD4HR-AIR3mOoc/preview")}
+                                      >
+                                        <img
+                                       className="projectLinkImage"
+                                        src='https://cdn-icons-png.flaticon.com/512/149/149125.png'
+                                        >
+                                        </img>
+                                        <h2
+                                        className="projectLinkTitle"
+                                        >
+                                            View Demo
+                                        </h2>
+
+
+                                      </div> : <></>
+
+                                 }
+
+                                    <div
+                                      className="projectLink"
+                                      onClick={()=> openInNewTab('https://drive.google.com/file/d/1T7XLsCTSrxaGiDSARfdnTfdA4x51crm6/preview')}
+                                      >
+                                        <img
+                                       className="projectLinkImage"
+                                        src='https://cdn-icons-png.flaticon.com/512/25/25231.png'
+                                        >
+                                        </img>
+                                        <h2
+                                        className="projectLinkTitle"
+                                        >
+                                            Github Link
+                                        </h2>
+
+
+                                      </div>
                             </div>
 
                         </AccordionDetails>
@@ -150,18 +262,64 @@ function FeaturedProjects(){
                         <div
                             className="accordianDiv"
                             >
+
+{
+                                    deviceWidth==='mobile' ? <></> :
+
                                  <iframe src="https://drive.google.com/file/d/1mZAMSAIXWzvqksgHytnIpciz6SNzd1k-/preview"
                                  
                                  className="videos"
                                  allowFullScreen
                                  
                                  ></iframe>
+
+}
                                  <h1
                                  className="titleAndDescription"
                                  >Habitual</h1>
                                  <h2
                                  className="titleAndDescription"
                                  >Simple App where users can make habits and track their daily habit goals</h2>
+
+{
+                                      deviceWidth==='mobile' ? 
+                                      <div
+                                      className="projectLink"
+                                      onClick={()=> openInNewTab("https://drive.google.com/file/d/1mZAMSAIXWzvqksgHytnIpciz6SNzd1k-/preview")}
+                                      >
+                                        <img
+                                       className="projectLinkImage"
+                                        src='https://cdn-icons-png.flaticon.com/512/149/149125.png'
+                                        >
+                                        </img>
+                                        <h2
+                                        className="projectLinkTitle"
+                                        >
+                                            View Demo
+                                        </h2>
+
+
+                                      </div> : <></>
+
+                                 }
+
+                                    <div
+                                      className="projectLink"
+                                      onClick={()=> openInNewTab('https://drive.google.com/file/d/1T7XLsCTSrxaGiDSARfdnTfdA4x51crm6/preview')}
+                                      >
+                                        <img
+                                       className="projectLinkImage"
+                                        src='https://cdn-icons-png.flaticon.com/512/25/25231.png'
+                                        >
+                                        </img>
+                                        <h2
+                                        className="projectLinkTitle"
+                                        >
+                                            Github Link
+                                        </h2>
+
+
+                                      </div>
                             </div>
 
                         </AccordionDetails>
