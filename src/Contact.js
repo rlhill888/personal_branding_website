@@ -1,9 +1,11 @@
 import React from "react";
+import { useState } from "react";
 import NavBar from "./Navbar";
 import './Contact.css'
 import Button from '@mui/material/Button';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import { motion } from "framer-motion";
+import Snackbar from '@mui/material/Snackbar';
 
 function Contact(){
 
@@ -11,6 +13,8 @@ function Contact(){
         const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
         if (newWindow) newWindow.opener = null
       }
+    
+    const [openEmailCopiedMenu, setOpenCopiedEmailMenu]= useState(false)
 
     return(
         <motion.div
@@ -28,6 +32,7 @@ function Contact(){
             duration: 1
         }}
         >
+        <Snackbar autoHideDuration={2000} message='Email copied to clipboard' open={openEmailCopiedMenu} onClose={()=>{ setOpenCopiedEmailMenu(false)}}></Snackbar>
         <NavBar></NavBar>
         <div
         
@@ -63,7 +68,7 @@ function Contact(){
             >
                 <h1
                  className="mainContactDivHeaders"
-                >Please Feel Free To Contact Me, and Check Out the Links to My Github, LinkedIn, Blog Posts, and Resume</h1>
+                >Please Feel Free To Contact Me, and Check Out the Links to My Github, LinkedIn, and Resume</h1>
                 <br />
                 <h1
                 className="mainContactDivHeaders"
@@ -71,6 +76,7 @@ function Contact(){
                 >rlhill888@gmail.com
                 <Button onClick={()=>{
                     navigator.clipboard.writeText('rlhill888@gmail.com')
+                    setOpenCopiedEmailMenu(true)
                 }}>
 
                     <ContentCopyIcon />
@@ -108,20 +114,6 @@ function Contact(){
                     <h3
                     className="linkTitlesContact"
                     > LinkedIn</h3>
-                    
-                </div>
-                <br />
-                <div className="link-content-div"
-                 onClick={() => openInNewTab('https://dev.to/rlhill888')}
-                >
-                    <img
-                    className="logoImageIcon"
-                    src="https://cdn.worldvectorlogo.com/logos/devto.svg"
-                    >
-                    </img>
-                    <h3
-                    className="linkTitlesContact"
-                    > Blog</h3>
                     
                 </div>
                 <br />

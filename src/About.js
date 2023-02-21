@@ -15,6 +15,7 @@ function About(){
     const [shownCodingKnowledge, setShownCodingKnowledge]= useState('basic coding applications')
     const [showVideoTitle, setShowVideoTitle]= useState(true)
     const width= window.innerWidth
+    const impactwarePictureAdress= 'data:image/png;base64,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'
 
     const openInNewTab = (url) => {
         const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
@@ -219,7 +220,7 @@ function About(){
                         </p>
                         <img 
                         className="educationImg"
-                        src="https://yt3.ggpht.com/OdqbqZ6lz56qqxAxrnEqXV077THYZKbMioRHHJziknXycajWeueGwvhi-VRy88H3cfpYeUy6JQ=s900-c-k-c0x00ffffff-no-rj"></img>
+                        src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/8/original/flatironschool.png"></img>
                         </div>
             
                         <p
@@ -242,7 +243,7 @@ Flatiron School is frequently ranked as a top coding bootcamp by industry public
                         <p
                         className="educationParagrpah"
                         >
-                            Recieved Certificate of Completion, and Learned Full Stack Web Development, Ruby on Rails, React  and JavaScript.
+                            Recieved Certificate of Completion, and Learned Ruby on Rails, React  and JavaScript.
                         </p>
                     </div>
                     <div
@@ -259,7 +260,7 @@ Flatiron School is frequently ranked as a top coding bootcamp by industry public
                         </p>
                         <img 
                         className="educationImg"
-                        src='https://scontent.fewr1-5.fna.fbcdn.net/v/t39.30808-6/279508686_399261502204860_9068764250762831577_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=SHbAZMBCDu8AX9FHli8&_nc_ht=scontent.fewr1-5.fna&oh=00_AT8skgcZYYOXN-BpACU-dxRUHm_q_Rz-AJha0Hi-Nqyh5w&oe=62CE4182'></img>
+                        src='https://agora.org/wp-content/themes/agora/img/missingphoto-image.jpg'></img>
                         </div>
             
                         <p
@@ -318,7 +319,7 @@ Flatiron School is frequently ranked as a top coding bootcamp by industry public
 
                     <div
                     className="educationDiv"
-                    onClick={() => openInNewTab('https://www.courts.phila.gov/')}
+                    onClick={() => openInNewTab('https://www.linkedin.com/company/impactware-gotohelios/')}
                     >
                         <div
                         className="educationHeaderDiv"
@@ -326,29 +327,31 @@ Flatiron School is frequently ranked as a top coding bootcamp by industry public
                         <p
                         className="educationParagrpah"
                         >
-                            First Judicial District of Philadelphia
+                            Impactware
                         </p>
                         <img 
                         className="educationImg"
-                        src="https://www.courts.phila.gov/assets/img/sliders/fjd-seal250.png"></img>
+                        src={impactwarePictureAdress}
+                        
+                        ></img>
                         </div>
                         <p
                         className="educationParagrpah"
                         >
-                           Position Title: Judicial Clerk
+                        Front End Software Engineer Apprenticeship
                         </p>
             
                         <p
                         className="educationParagrpah"
                         >
-                            January 2015 - March 2020
+                            November 2022 - February 2023
                         </p>
                         <ul>
                             <li>
                             <p
                         className="educationParagrpah"
                         >
-                            Organized bar codes, scanned and entered Civil Case Management Reports and related documentation into Court's Civil Case Management System
+                            {"Built out Impactware’s example client site (which is a test site for users to try out Impactware’s applications on) utilizing Next.js"}
 
                         </p>
                             </li>
@@ -356,26 +359,29 @@ Flatiron School is frequently ranked as a top coding bootcamp by industry public
                             <p
                         className="educationParagrpah"
                         >
-                            Received and sorted mail, distributing mail to appropriate recipients and departments
+                           {"Used vanilla JavaScript to build Impactware’s Event Tagger Menu for users to test on the example client website, and use in their own apps"}
 
                         </p>
                             </li>
-                            <li>
+                        <li>
                             <p
                         className="educationParagrpah"
                         >
-                            Maintained record of incoming mail, ensuring delivery of outgoing mail to courier or post office 
+                            {"Collaborated with coworkers to build out  Next.js/react components that were created on InVision"}
 
                         </p>
-                            </li>
-                            <li>
+                        </li>
+
+                        <li>
                             <p
                         className="educationParagrpah"
                         >
-                            Checked postal rates and weighed outgoing mail, and posted shipping labels on packages
+                            {"Utilized Cypress for end to end testing, and Story book for Component based UI/Frontend development"}
 
                         </p>
-                            </li>
+                        </li>
+
+
                         </ul>
                        
                     </div>
@@ -411,6 +417,46 @@ Flatiron School is frequently ranked as a top coding bootcamp by industry public
                     <div className="indivisualCodingKnowledgePlatform">
                         <img
                         className="indidivisualCodingKnowledgeImage"
+                        src="https://cdn.worldvectorlogo.com/logos/next-js.svg">
+                        </img>
+                        <h3
+                        className="indivisualCodingKnowledgeText"
+                        >Next.js</h3>
+
+                    </div>
+                    <div className="indivisualCodingKnowledgePlatform">
+                        <img
+                        className="indidivisualCodingKnowledgeImage"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png">
+                        </img>
+                        <h3
+                        className="indivisualCodingKnowledgeText"
+                        >React</h3>
+
+                    </div>
+                    <div className="indivisualCodingKnowledgePlatform">
+                        <img
+                        className="indidivisualCodingKnowledgeImage"
+                        src="https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png">
+                        </img>
+                        <h3
+                        className="indivisualCodingKnowledgeText"
+                        >Express js</h3>
+
+                    </div>
+                    <div className="indivisualCodingKnowledgePlatform">
+                        <img
+                        className="indidivisualCodingKnowledgeImage"
+                        src="https://www.adrenalina.es/wp-content/uploads/2020/04/desarrollador-ruby-on-rails.png">
+                        </img>
+                        <h3
+                        className="indivisualCodingKnowledgeText"
+                        >Rails</h3>
+
+                    </div>
+                    <div className="indivisualCodingKnowledgePlatform">
+                        <img
+                        className="indidivisualCodingKnowledgeImage"
                         src="https://w7.pngwing.com/pngs/390/229/png-transparent-logo-html5-brand-design-text-logo-number.png">
                         </img>
                         <h3
@@ -426,36 +472,6 @@ Flatiron School is frequently ranked as a top coding bootcamp by industry public
                         <h3
                         className="indivisualCodingKnowledgeText"
                         >CSS</h3>
-
-                    </div>
-                    <div className="indivisualCodingKnowledgePlatform">
-                        <img
-                        className="indidivisualCodingKnowledgeImage"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1024px-Ruby_logo.svg.png">
-                        </img>
-                        <h3
-                        className="indivisualCodingKnowledgeText"
-                        >Ruby</h3>
-
-                    </div>
-                    <div className="indivisualCodingKnowledgePlatform">
-                        <img
-                        className="indidivisualCodingKnowledgeImage"
-                        src="https://w7.pngwing.com/pngs/782/228/png-transparent-ruby-on-rails-rubygems-amazon-dynamodb-ruby-text-logo-ruby-thumbnail.png">
-                        </img>
-                        <h3
-                        className="indivisualCodingKnowledgeText"
-                        >Rails</h3>
-
-                    </div>
-                    <div className="indivisualCodingKnowledgePlatform">
-                        <img
-                        className="indidivisualCodingKnowledgeImage"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png">
-                        </img>
-                        <h3
-                        className="indivisualCodingKnowledgeText"
-                        >React</h3>
 
                     </div>
                     <div className="indivisualCodingKnowledgePlatform">

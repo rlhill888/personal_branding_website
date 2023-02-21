@@ -142,6 +142,23 @@ function FeaturedProjects(){
 
 
                                       </div>
+                                      <div
+                                      className="projectLink"
+                                      onClick={()=> openInNewTab('https://workout-4-me-application.herokuapp.com/')}
+                                      >
+                                        <img
+                                       className="projectLinkImage"
+                                        src='https://static.thenounproject.com/png/4481649-200.png'
+                                        >
+                                        </img>
+                                        <h2
+                                        className="projectLinkTitle"
+                                        >
+                                            Work out 4 me App Link
+                                        </h2>
+
+
+                                      </div>
 
                                  
                             </div>
@@ -149,6 +166,97 @@ function FeaturedProjects(){
                        
                             
 
+
+                        </AccordionDetails>
+                    </Accordion>
+
+                    
+                    <br />
+
+
+                    <Accordion
+                        className="AccordianProjectDiv"
+                        elevation={5}
+                        >
+                        <AccordionSummary>
+                            <div
+                            className="AccordianSummaryDiv"
+                            >
+                                 <h2
+                            className="AccordianProjectHeader"
+                            >Legendary Cutz Booking Application</h2>
+                            <img
+                            src="https://ae01.alicdn.com/kf/H511c59db5319441a8edec700c299cb00j.jpg"
+                            className="AccordianSummaryImg"
+                            >
+                            </img>
+                            </div>
+                           
+                        </AccordionSummary>
+                        <AccordionDetails>
+                        <div
+                            className="accordianDiv"
+                            >
+
+{
+                                    deviceWidth==='mobile' ? <></> :
+
+                                    <iframe src="https://drive.google.com/file/d/1aWN_GQQJ5DhDKCAKiC4hbcEDcCfY8FVD/preview" 
+
+
+                                    className="videos"
+                                    allowFullScreen
+                                    
+                                    ></iframe>
+
+}
+                                 <h1
+                                 className="titleAndDescription"
+                                 >Legendary Cutz Booking Application</h1>
+                                 <h2
+                                 className="titleAndDescription"
+                                 >App for users to be able to book appointments with barbers at Legendary Cutz barbershop, located at 6316 Sackett st. Philadelphia PA.	</h2>
+
+                                {
+                                      deviceWidth==='mobile' ? 
+                                      <div
+                                      className="projectLink"
+                                      onClick={()=> openInNewTab("https://drive.google.com/file/d/1aWN_GQQJ5DhDKCAKiC4hbcEDcCfY8FVD/preview")}
+                                      >
+                                        <img
+                                       className="projectLinkImage"
+                                        src='https://cdn-icons-png.flaticon.com/512/149/149125.png'
+                                        >
+                                        </img>
+                                        <h2
+                                        className="projectLinkTitle"
+                                        >
+                                            View Demo
+                                        </h2>
+
+
+                                      </div> : <></>
+
+                                 }
+
+                                    <div
+                                      className="projectLink"
+                                      onClick={()=> openInNewTab('https://github.com/rlhill888/tkrl-beat-site')}
+                                      >
+                                        <img
+                                       className="projectLinkImage"
+                                        src='https://cdn-icons-png.flaticon.com/512/25/25231.png'
+                                        >
+                                        </img>
+                                        <h2
+                                        className="projectLinkTitle"
+                                        >
+                                            Github Link
+                                        </h2>
+
+
+                                      </div>
+                            </div>
 
                         </AccordionDetails>
                     </Accordion>
@@ -220,92 +328,6 @@ function FeaturedProjects(){
                                     <div
                                       className="projectLink"
                                       onClick={()=> openInNewTab('https://github.com/rlhill888/tkrl-beat-site')}
-                                      >
-                                        <img
-                                       className="projectLinkImage"
-                                        src='https://cdn-icons-png.flaticon.com/512/25/25231.png'
-                                        >
-                                        </img>
-                                        <h2
-                                        className="projectLinkTitle"
-                                        >
-                                            Github Link
-                                        </h2>
-
-
-                                      </div>
-                            </div>
-
-                        </AccordionDetails>
-                    </Accordion>
-                    <br />
-                    <Accordion
-                        className="AccordianProjectDiv"
-                        elevation={5}
-                        >
-                        <AccordionSummary>
-                            <div
-                            className="AccordianSummaryDiv"
-                            >
-                                 <h2
-                            className="AccordianProjectHeader"
-                            >Habitual App</h2>
-                            <img
-                            src="https://images.erincondren.com/Stickers/Customizable_Event_Stickers/CSM_HTS_3_edit.jpg"
-                            className="AccordianSummaryImg"
-                            >
-                            </img>
-                            </div>
-                           
-                        </AccordionSummary>
-                        <AccordionDetails>
-                        <div
-                            className="accordianDiv"
-                            >
-
-{
-                                    deviceWidth==='mobile' ? <></> :
-
-                                 <iframe src="https://drive.google.com/file/d/1mZAMSAIXWzvqksgHytnIpciz6SNzd1k-/preview"
-                                 
-                                 className="videos"
-                                 allowFullScreen
-                                 
-                                 ></iframe>
-
-}
-                                 <h1
-                                 className="titleAndDescription"
-                                 >Habitual</h1>
-                                 <h2
-                                 className="titleAndDescription"
-                                 >Simple App where users can make habits and track their daily habit goals</h2>
-
-{
-                                      deviceWidth==='mobile' ? 
-                                      <div
-                                      className="projectLink"
-                                      onClick={()=> openInNewTab("https://drive.google.com/file/d/1mZAMSAIXWzvqksgHytnIpciz6SNzd1k-/preview")}
-                                      >
-                                        <img
-                                       className="projectLinkImage"
-                                        src='https://cdn-icons-png.flaticon.com/512/149/149125.png'
-                                        >
-                                        </img>
-                                        <h2
-                                        className="projectLinkTitle"
-                                        >
-                                            View Demo
-                                        </h2>
-
-
-                                      </div> : <></>
-
-                                 }
-
-                                    <div
-                                      className="projectLink"
-                                      onClick={()=> openInNewTab('https://github.com/alex-andria/Habit-Tracker')}
                                       >
                                         <img
                                        className="projectLinkImage"
