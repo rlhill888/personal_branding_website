@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 function FeaturedProjects(){
 
-    const width= window.innerWidth
+    let width= window.innerWidth
     const [deviceWidth, setDeviceWidth]=useState('')
     const openInNewTab = (url) => {
         const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
@@ -19,9 +19,11 @@ function FeaturedProjects(){
     useEffect(()=>{
         if(width<=480){
             setDeviceWidth('mobile')
+        }else{
+            setDeviceWidth('')
         }
 
-    }, [])
+    }, [window.innerWidth])
     
     return(
         <div
@@ -241,7 +243,7 @@ function FeaturedProjects(){
 
                                     <div
                                       className="projectLink"
-                                      onClick={()=> openInNewTab('https://github.com/rlhill888/tkrl-beat-site')}
+                                      onClick={()=> openInNewTab('https://github.com/rlhill888/Legendary_cutz_boooking_site')}
                                       >
                                         <img
                                        className="projectLinkImage"
